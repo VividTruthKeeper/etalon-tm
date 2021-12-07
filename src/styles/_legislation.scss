@@ -1,0 +1,59 @@
+.legislation {
+  .tab-header {
+    grid-template-columns: 38rem 24rem 1fr;
+  }
+}
+
+.legislation-inner {
+  padding-bottom: 10rem;
+}
+
+.law-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.law-card {
+  max-width: 40rem;
+  max-height: 26.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  border: 0.1rem solid #dfdfdf;
+  border-bottom: none;
+  box-shadow: 0 0.4rem #981429;
+}
+
+.law-card-text {
+  padding: 0 3rem;
+  margin: 3rem 0 1rem 0;
+}
+
+.law-card-bold {
+  padding: 0 3rem;
+  margin: 1rem 0 3rem 0;
+  font-weight: bold;
+}
+
+// MOBILE
+
+@media screen and (max-width: 1200px) {
+  .law-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .law-card {
+    width: 100%;
+    justify-self: center;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .law-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

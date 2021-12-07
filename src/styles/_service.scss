@@ -1,0 +1,122 @@
+.service-inner {
+  padding-bottom: 10rem;
+
+  .tab-header {
+    grid-template-columns: 1fr 20rem;
+
+    &:last-child {
+      grid-template-columns: 21rem 24rem 1fr;
+    }
+  }
+}
+
+.service-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-img-wrapper {
+  max-height: 32.4rem;
+  max-width: 28.5rem;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.service-card {
+  max-width: 30.5rem;
+  max-height: 39.6rem;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border: 0.1rem solid #dfdfdf;
+  box-shadow: 0 0.4rem #981429;
+  border-bottom: none;
+  padding: 1rem 1rem 0 1rem;
+  color: #000;
+  background: #fff;
+  transition: all 0.3s ease;
+
+  &:nth-child(1n):hover {
+    background: #981429;
+    color: #fff;
+    transition: all 0.3s ease;
+    .service-abs {
+      opacity: 100%;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.service-abs {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 1rem;
+  left: 1rem;
+  background: #981429;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0%;
+  transition: opacity 0.2s ease;
+
+  div {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.service-card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 1360px) {
+  .service-inner {
+    .tab-header {
+      grid-template-columns: 1fr 0rem;
+    }
+  }
+
+  .service-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card {
+    justify-self: center;
+    max-width: unset;
+    max-height: unset;
+    width: 100%;
+    height: 100%;
+  }
+
+  .service-img-wrapper {
+    max-height: unset;
+    max-width: unset;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .service-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

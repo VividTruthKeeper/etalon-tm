@@ -1,0 +1,62 @@
+.plans {
+  .tab-header {
+    grid-template-columns: 1fr 20rem;
+  }
+}
+
+.planscard {
+  border: 0.1rem solid #dfdfdf;
+  max-width: 40rem;
+  max-height: 11.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.4rem #981429;
+  padding: 5rem 3rem;
+
+  h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.plans-card-wrapper {
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.plans-content {
+  padding-bottom: 10rem;
+}
+
+// MOBILE
+
+@media screen and (max-width: 1360px) {
+  .plans-inner {
+    .tab-header {
+      grid-template-columns: 1fr 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .plans-inner {
+    .plans-card-wrapper {
+      grid-template-columns: 1fr 1fr;
+
+      .planscard {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .plans-inner {
+    .plans-card-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

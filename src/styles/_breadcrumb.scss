@@ -1,0 +1,51 @@
+.breadcrumb {
+  padding: 3rem 0;
+  background: #003a9d;
+  margin-bottom: 5rem;
+}
+
+.breadcrumb-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.breadcrumb-slash {
+  margin: 0 2rem;
+}
+
+.breadcrumb-text-unfaded {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-text-faded {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .breadcrumb {
+    padding: 2.5rem 0;
+  }
+
+  .breadcrumb-inner {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .breadcrumb {
+    padding: 1.8rem 0;
+  }
+
+  .breadcrumb-inner {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,146 @@
+footer {
+  background: #003a9d;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.footer-inner {
+  padding: 5rem 0 3rem 0;
+}
+
+.footer-link-text {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.footer-link-title {
+  padding-bottom: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-link-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.7rem;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-link-img {
+  min-width: 1.8rem;
+  min-height: 1.2rem;
+  max-width: 1.8rem;
+  max-height: 1.2rem;
+  width: 1.8rem;
+  height: 1.2rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.footer-link-text {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  font-weight: normal;
+}
+h6.footer-link-text {
+  margin: 0;
+}
+
+.footer-middle {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 4rem 0 0 0;
+
+  &::after {
+    display: block;
+    content: "";
+    border: none;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.644);
+    margin: 3rem 0 6rem 0;
+  }
+}
+
+.footer-middle-link {
+  display: flex;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: underline;
+  justify-self: center;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .footer-link-title {
+    font-size: 2rem;
+  }
+  .footer-link-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .footer-link-title {
+    font-size: 1.8rem;
+  }
+  .footer-link-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .footer-link-title {
+    font-size: 1.6rem;
+  }
+  .footer-link-text {
+    font-size: 1.4rem;
+  }
+  .footer-middle-link {
+    font-size: 1.4rem;
+  }
+  .footer-bottom {
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.measuring-register {
+  .tab-header {
+    grid-template-columns: 1fr 20rem;
+  }
+}
+
+.mr-content {
+  padding-bottom: 10rem;
+}
+
+.mr-table {
+  overflow-x: auto;
+}
+
+.regulations-head-left {
+  border-radius: 0rem !important;
+  input {
+    border-radius: 0rem !important;
+  }
+}
+
+// MOBILE
+
+@media screen and(max-width: 1360px) {
+  .measuring-register {
+    .tab-header {
+      grid-template-columns: 1fr 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .regulations-head-left {
+    .search-form {
+      min-width: unset;
+    }
+  }
+}

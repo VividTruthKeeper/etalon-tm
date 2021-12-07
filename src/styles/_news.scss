@@ -1,0 +1,36 @@
+.news-page-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+
+.prev-button,
+.next-button {
+  border: 0.1rem solid #dfdfdf;
+  width: 7rem;
+  height: 7rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgb(179, 179, 179);
+    transition: all 0.2s ease;
+  }
+
+  &:active {
+    background: rgb(119, 119, 119);
+    transition: all 0.2s ease;
+  }
+}
+
+.page-index {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0 5rem;
+}

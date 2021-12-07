@@ -1,0 +1,45 @@
+// GENERAL STYLING
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 134rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+// IMPORT PARTIALS
+@import "./nav.scss";
+@import "./footer.scss";
+@import "./main.scss";
+@import "./news.scss";
+@import "./breadcrumb.scss";
+@import "./novelty.scss";
+@import "./etalons.scss";
+@import "./etalon.scss";
+@import "./legislation.scss";
+@import "./history.scss";
+@import "./structure.scss";
+@import "./prices.scss";
+@import "./measuringRegister";
+@import "./meteorology";
+@import "./calibrateInstruments";
+@import "./calibrateThermo";
+@import "./regulations";
+@import "./service";

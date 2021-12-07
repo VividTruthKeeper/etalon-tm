@@ -1,0 +1,29 @@
+.etalons {
+  .tab-header {
+    grid-template-columns: 43rem 24rem 1fr;
+  }
+}
+
+@media screen and(max-width: 770px) {
+  .etalons {
+    .tab-header {
+      grid-template-columns: 37rem 0 1fr;
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .etalons {
+    .tab-header {
+      grid-template-columns: 31rem 0rem 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .etalons {
+    .tab-header {
+      grid-template-columns: 1fr;
+    }
+  }
+}

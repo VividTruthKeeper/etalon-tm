@@ -1,0 +1,25 @@
+.calibrate-thermo-content {
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .novelty-head {
+    margin-bottom: 5rem;
+  }
+}
+
+.structure-table tbody * {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+// MOBILE
+
+@media screen and (max-width: 1000px) {
+  .structure-table tbody * {
+    font-size: 1.2rem;
+  }
+}

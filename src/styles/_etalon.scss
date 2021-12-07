@@ -1,0 +1,30 @@
+.etalon-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+.etalon-inner {
+  h6 {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+  }
+  ul {
+    padding: 0rem 0 0rem 3rem;
+  }
+}
+
+// MOBILE
+
+@media screen and (max-width: 1360px) {
+  .novelty-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .novelty-text {
+    font-size: 1.4rem;
+  }
+}
